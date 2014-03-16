@@ -1,0 +1,11 @@
+name: SkyCore
+version: 1.0
+author: Aperx
+description: Core plugin for the Sky server
+main: com.sky.core.SkyCore
+
+commands:
+  coins:
+    description: Base coin command
+    permission: server.coins
+  
