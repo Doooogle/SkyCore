@@ -28,7 +28,7 @@ public class Coins {
 	public static void addCoins(String player, int amount) {
 		if (coins.containsKey(player)){
 			coins.put(player, coins.get(player) + amount);
-			Bukkit.getLogger().info(player + " had " + Integer.valueOf(amount) + " fuel added to their account.");
+			Bukkit.getLogger().info(player + " had " + Integer.valueOf(amount) + " coins added to their account.");
 		}		
 	}
 
@@ -38,7 +38,7 @@ public class Coins {
 		  
 		  if((has - amount) < 0) return false;			 
 		  coins.put(player, has - amount);
-		  Bukkit.getLogger().info(player + " had " + Integer.valueOf(amount) + " fuel minused from their account.");
+		  Bukkit.getLogger().info(player + " had " + Integer.valueOf(amount) + " coins minused from their account.");
 		  return true;  
 		} 
 }
