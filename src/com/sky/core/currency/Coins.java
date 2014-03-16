@@ -33,7 +33,7 @@ public class Coins {
 	}
 
 	
-	public static boolean minusFuel(String player, int amount) {
+	public static boolean minusCoins(String player, int amount) {
 		  int has = coins.get(player);
 		  
 		  if((has - amount) < 0) return false;			 

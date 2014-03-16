@@ -65,11 +65,11 @@ public class CommandCoins implements CommandExecutor {
 					return false;
 				}
 				if(args[0].equalsIgnoreCase("take")){
-					if(Coins.minusFuel(p.getName(), Integer.valueOf(args[2])) == false) {
+					if(Coins.minusCoins(p.getName(), Integer.valueOf(args[2])) == false) {
 						p.sendMessage(Strings.getPrefix() + ChatColor.DARK_AQUA + "Error: A players coin amount cannot go below 0.");		
 						return false;
 					}
-					Coins.minusFuel(p.getName(), Integer.valueOf(args[2]));
+					Coins.minusCoins(p.getName(), Integer.valueOf(args[2]));
 					p.sendMessage(Strings.getPrefix() + ChatColor.DARK_AQUA + "You have taken " + ChatColor.GOLD + Integer.valueOf(args[2]) + ChatColor.DARK_AQUA + " coins from " + ChatColor.AQUA + target.getName() + "'s" + ChatColor.DARK_AQUA + " account.");
 					return false;
 				}
